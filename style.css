@@ -1,0 +1,48 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-color: #a0d8f1;
+  text-align: center;
+  margin: 0;
+  padding: 16px 12px 40px;
+}
+
+h1 { margin-bottom: 20px; }
+
+.hidden { display: none; }
+
+#menu select, #menu button {
+  display: block;
+  margin: 8px auto;
+  padding: 6px 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Tabuleiro quadrado padrão */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  justify-content: center;
+  margin: 20px auto;
+  gap: 2px; /* separação entre os quadrados */
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background-color: white; /* quadrado branco padrão */
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid black; /* borda de cada quadrado */
+}
+
+#restartBtn, #menuBtn {
+  margin-top: 12px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}

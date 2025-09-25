@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo da Velha</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Jogo da Velha</h1>
+
+<div id="menu">
+  <h2>Modo de jogo</h2>
+  <select id="modeSelect">
+    <option value="" disabled selected>Selecione o modo</option>
+    <option value="multiplayer">2 Players</option>
+    <option value="computer">Contra Computador</option>
+  </select>
+
+  <div id="levelContainer" class="hidden">
+    <h2>Nível da IA</h2>
+    <select id="levelSelect">
+      <option value="" disabled selected>Escolha o nível</option>
+      <option value="easy">Fácil</option>
+      <option value="medium">Intermediário</option>
+      <option value="hard">Difícil</option>
+      <option value="impossible">Impossível</option>
+      <option value="ssj3">Super Sayajin 3</option>
+    </select>
+  </div>
+
+  <h2>Símbolo do Player 1</h2>
+  <select id="symbolSelect">
+    <option value="" disabled selected>Escolha X ou O</option>
+    <option value="X">X</option>
+    <option value="O">O</option>
+  </select>
+
+  <h2>Cor do Player 1</h2>
+  <select id="color1Select">
+    <option value="" disabled selected>Escolha a cor</option>
+    <option value="blue">Azul</option>
+    <option value="green">Verde</option>
+    <option value="red">Vermelho</option>
+    <option value="pink">Rosa</option>
+    <option value="orange">Laranja</option>
+    <option value="black">Preto</option>
+    <option value="white">Branco</option>
+    <option value="purple">Roxo</option>
+    <option value="violet">Lilás</option>
+    <option value="yellow">Amarelo</option>
+    <option value="brown">Marrom</option>
+  </select>
+
+  <div id="color2Container" class="hidden">
+    <h2>Cor do Player 2 / Computador</h2>
+    <select id="color2Select">
+      <option value="" disabled selected>Escolha a cor</option>
+      <option value="blue">Azul</option>
+      <option value="green">Verde</option>
+      <option value="red">Vermelho</option>
+      <option value="pink">Rosa</option>
+      <option value="orange">Laranja</option>
+      <option value="black">Preto</option>
+      <option value="white">Branco</option>
+      <option value="purple">Roxo</option>
+      <option value="violet">Lilás</option>
+      <option value="yellow">Amarelo</option>
+      <option value="brown">Marrom</option>
+    </select>
+  </div>
+
+  <button id="startBtn">Iniciar Jogo</button>
+</div>
+
+<div id="gameBoard" class="hidden">
+  <div class="board">
+    <div class="cell" data-index="0"></div>
+    <div class="cell" data-index="1"></div>
+    <div class="cell" data-index="2"></div>
+    <div class="cell" data-index="3"></div>
+    <div class="cell" data-index="4"></div>
+    <div class="cell" data-index="5"></div>
+    <div class="cell" data-index="6"></div>
+    <div class="cell" data-index="7"></div>
+    <div class="cell" data-index="8"></div>
+  </div>
+  <p id="status"></p>
+  <button id="restartBtn">Reiniciar Jogo</button>
+  <button id="menuBtn">Voltar ao Menu</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

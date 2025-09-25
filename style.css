@@ -1,5 +1,5 @@
 body {
-  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-family: Arial, Verdana, Tahoma, sans-serif;
   background-color: #a0d8f1;
   text-align: center;
   margin: 0;
@@ -46,3 +46,4 @@ h1 { margin-bottom: 20px; }
   font-size: 1rem;
   cursor: pointer;
 }
+
